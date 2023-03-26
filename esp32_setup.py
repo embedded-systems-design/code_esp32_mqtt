@@ -47,6 +47,9 @@ if 'lib' in os.listdir('./'):
     if 'mqtt_async.py' not in os.listdir('lib/'):
     	# install the micropython mqtt library
         upip.install('micropython-mqtt')
+        # install the async micropython mqtt library
+        upip.install('micropython-mqtt-async')
+
 # if there is no 'lib directory', nothing has been downloaded
 else:
     # so download both libraries
